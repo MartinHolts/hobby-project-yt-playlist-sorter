@@ -1,15 +1,14 @@
 {
-  "manifest_version": 2,
-
-  "name": "youtube sidebar playlists sorter",
-  "description": "This extension allows to sort youtube sidemenu playlists.",
-  "version": "1.0",
-
-  "browser_action": {
-   "default_icon": "icon.png",
-   "default_popup": "popup.html"
-  },
-  "permissions": [
-   "activeTab"
-   ]
+	"name": "youtube sidebar playlists sorter",
+	"action": {},
+	"manifest_version": 3,
+	"version": "0.1",
+	"description": "This extension allows to sort youtube sidemenu playlists.",
+	"permissions": [
+		"activeTab",
+		"scripting"
+	],
+	"background": {
+		"service_worker": "background.js"
+	}
 }
